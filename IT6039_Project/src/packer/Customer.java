@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- * @author I.M.Bad
+ * @author Rosanna Walsh
  */
 public class Customer {
     

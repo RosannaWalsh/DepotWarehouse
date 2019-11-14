@@ -2,15 +2,23 @@ package packer;
 
 /**
  *
- * @author I.M.Bad
+ * @author Rosanna Walsh
  */
 public class Address {
-    private String street;
-    private String suburb;
-    private String city;
-    private String postcode;
-    private Coordinates coordinates;
+    private final String street;
+    private final String suburb;
+    private final String city;
+    private final String postcode;
+    private final Coordinates coordinates;
 
+    /**
+     *
+     * @param street
+     * @param suburb
+     * @param city
+     * @param postcode
+     * @param coordinates
+     */
     public Address(String street, String suburb, String city, String postcode, Coordinates coordinates) {
         this.street = street;
         this.suburb = suburb;
@@ -19,6 +27,7 @@ public class Address {
         this.coordinates = coordinates;
     }
 
+    @Override
     public String toString() {
         return 
                 street + "\n" +
@@ -27,7 +36,7 @@ public class Address {
                 postcode;
     }
     /**
-     * @return the coordinates
+     * @return the coordinates of street, suburb, city and postcode 
      */
     public Coordinates getCoordinates() {
         return coordinates;
